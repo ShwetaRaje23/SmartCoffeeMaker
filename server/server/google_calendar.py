@@ -68,11 +68,12 @@ def get_next_event():
         return None 
 
     return events[0] 
+    # print events[0]
 
     #for event in events:
     #    start = event['start'].get('dateTime', event['start'].get('date'))
     #    print start, event['summary']
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     get_next_event()
