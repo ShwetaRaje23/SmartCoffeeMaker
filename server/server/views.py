@@ -8,4 +8,4 @@ def index(request):
 	template = loader.get_template('index.html')
 	context = RequestContext(request, {})
 	# event = get_next_event()
-	return HttpResponse()
+	return HttpResponse(template.render(context))
