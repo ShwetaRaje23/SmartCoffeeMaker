@@ -8,4 +8,5 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', 'server.views.index', name='initial_index'),
+   url(r'^brew/', 'server.views.brew', name='brew_coffee'),
 ]
