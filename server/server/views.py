@@ -27,7 +27,7 @@ from oauth2client import tools
 
 def index(request):
 	print "It worked !"
-	template = loader.get_template('index.html')
+	template = loader.get_template('login.html')
 	context = RequestContext(request, {})
 	#event = get_next_event()
 	return HttpResponse(template.render(context))
